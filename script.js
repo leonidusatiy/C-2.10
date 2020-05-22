@@ -55,6 +55,6 @@ const afterVote = () => {
 
 	// Добавляем новое сообщение и кнопку перехода к результатам
 	let voteMsg = document.createElement('h2');
-	
+	voteMsg.innerHTML = 'Вы проголосовали<br><a href="Результат.html">Посмотреть результаты</a>';
 	vote_buttons.before(voteMsg);
 }
