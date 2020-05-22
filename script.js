@@ -6,7 +6,7 @@ const vote_header = document.querySelector('.vote-header');
 
 const base_url = 'https://sf-pyw.mosyag.in';
 
-// Голосуем за котиков
+
 cat.onclick = () => {
 	fetch(base_url + '/sse/vote/cats', {
 		method: 'POST'
@@ -20,7 +20,7 @@ cat.onclick = () => {
     })
 }
 
-// Голосуем за песиков
+
 dog.onclick = () => {
 	fetch(base_url + '/sse/vote/dogs', {
 		method: 'POST'
@@ -34,7 +34,7 @@ dog.onclick = () => {
     })
 }
 
-// Голосуем за попуг
+
 parrot.onclick = () => {
 	fetch(base_url + '/sse/vote/parrots', {
 		method: 'POST'
@@ -48,9 +48,8 @@ parrot.onclick = () => {
     })
 }
 
-// Действия после голосования
 const afterVote = () => {
-	// Скрываем заголовок и кнопки голосования
+	
 	vote_header.style.display = 'none';
 	vote_buttons.style.display = 'none';
 
